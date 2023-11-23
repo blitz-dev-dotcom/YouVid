@@ -63,20 +63,31 @@ function App() {
           <div className='innercontpad'>
           <h1>YouVid</h1>
           <p>You can't Download Shorts! But You <br/> can Download long videos</p>
+          <div className='inputfield'>
           <input 
-            className='inputfield'
+            className='inputfield1'
             type='text'
             ref={inputref}
             placeholder='Paste Youtube Link'
           />
+          </div>
           <button className="butt" type='submit'>Search</button>
           </div>
         </div>
         <div className='downcont'>
-        {Down ? <div>
-          <a href={Low}>144px</a>
-          <a href={Medium}>360px</a>
-          <a href={High}>720px</a>
+        {Down ? <div className='pseudo'>
+          <div className='pseudo1'>
+            <div className='contin'><p className='para'>/// Low Quality upto 240p</p></div><div className='butin'><a href={Low}>Get</a></div>
+          </div>
+          <div className='pseudo1'>
+          <div className='contin'><p className='para'>/// Medium Quality upto 480p</p></div><div className='butin'><a href={Medium}>Get</a></div>
+          </div>
+          <div className='pseudo1'>
+          <div className='contin'><p className='para'>/// High Quality upto 720p</p></div><div className='butin'><a href={High}>Get</a></div>
+          </div>
+          <div className='pseudo1'>
+          <div className='contin'></div><div className='butin'></div>
+          </div>
         </div>:<div className='pseudo'>
           <div className='pseudo1'>
             <div className='cont1'></div><div className='but'></div>
