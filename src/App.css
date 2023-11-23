@@ -142,6 +142,8 @@ p{
     height: 100vh;
     width: 100%;
     background-image: url(./asset/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .forms{
     height: 80vh;
@@ -236,7 +238,7 @@ p{
   }
   .inputfield{
     height: 40px;
-    width: 280px;
+    width: 150px;
     border-radius: 6px;
     border: 1px rgb(123, 243, 248) solid;
     box-shadow: 1px 1px 10px rgb(123, 243, 248);
