@@ -6,7 +6,8 @@ function App() {
    const[ Low , setLow] = useState(null);
    const[ Medium , setMedium] = useState(null);
    const[ High , setHigh] = useState(null);
-   const [Audio,setAudio] = useState(null);
+   //const [Audio,setAudio] = useState(null);
+   const [Network , setNetwork] = useState(true);
    const inputref = useRef(null);
    const [Url,setUrl] = useState('')
    function youtube_parser(url){
@@ -17,6 +18,9 @@ function App() {
     console.log(Url);
     if (resp) {
       fetchdata(resp);
+    }
+    else{
+      setNetwork(false);
     }
    }
    const fetchdata = async(a)=>{
@@ -63,6 +67,7 @@ function App() {
         <div className='inner-pad'>
         <div className='innercont'>
           <div className='innercontpad'>
+          <div className='spantag'>{Network ? "" : <span>Youtube Link invalid!!</span>}</div>
           <h1>YouVid</h1>
           <p>You can't Download Shorts! But You <br/> can Download long videos</p>
           <div className='inputfield'>
@@ -74,6 +79,7 @@ function App() {
           />
           </div>
           <button className="butt" type='submit'>Search</button>
+          
           </div>
         </div>
         <div className='downcont'>

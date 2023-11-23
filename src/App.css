@@ -17,7 +17,8 @@
   background-color: white ;
   backdrop-filter: blur(50px);
   border-radius: 12px;
-  opacity: 0.8;
+  
+  opacity: 0.6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +43,7 @@
 }
 .innercontpad{
   position: relative;
-  height: 60%;
+  height: 70%;
   width: 90%;
  
   display: flex;
@@ -185,7 +186,7 @@ p{
     width: 90%;
     background-color: white ;
     border-radius: 12px;
-    opacity: 0.8;
+    opacity: 0.6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,7 +213,7 @@ p{
   }
   .innercontpad{
     position: relative;
-    height: 80%;
+    height: 70%;
     width: 95%;
     display: flex;
     flex-direction: column;
