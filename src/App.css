@@ -1,0 +1,267 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, rgb(179, 231, 179),rgb(91, 220, 91),rgb(0, 224, 0))
+}
+.forms{
+  height: 90vh;
+  width: 30%;
+  background-color: white ;
+  backdrop-filter: blur(50px);
+  border-radius: 12px;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-pad{
+  height: 95%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.innercont{
+  position: relative;
+  height: 50%;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.innercontpad{
+  position: relative;
+  height: 60%;
+  width: 90%;
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.downcont{
+  position: relative;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.pseudo{
+  position: relative;
+  height: 100%;
+  width: 90%;
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.pseudo1{
+  position: relative;
+  height: 33.5%;
+  width: 98%;
+  
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.cont1{
+  position: relative;
+  height: 40% ;
+  animation: overlay 1s infinite;
+  width: 70%;
+  border-radius: 7px;
+}
+.but{
+  position: relative;
+  height: 40% ;
+  animation: overlay 1s infinite;
+  width: 20%;
+  border-radius: 7px;
+}
+h1{
+  font-size: 38px;
+  color: rgb(43, 206, 206);
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+p{
+  font-size: 10px;
+  text-align: center;
+}
+.inputfield{
+  height: 40px;
+  width: 280px;
+  border-radius: 6px;
+  border: 1px rgb(123, 243, 248) solid;
+  box-shadow: 1px 1px 10px rgb(123, 243, 248);
+  outline:1px rgb(137, 238, 241) solid ;
+  padding: 10px;
+  color: rgb(132, 121, 121);
+  font-size: 1rem;
+  font-style:italic;
+}
+.butt{
+  height: 30px;
+  width: 100px;
+  border-radius: 6px;
+  border: 1px rgb(123, 243, 248) solid;
+  box-shadow: 1px 1px 10px rgb(123, 243, 248);
+  outline:1px rgb(137, 238, 241) solid ;
+  font-size: 1rem;
+  font-style:italic;
+}
+@keyframes overlay{
+  from{
+    background: linear-gradient(45deg,rgb(233, 229, 229),rgba(172, 162, 162, 0.118));
+  }
+  to{
+    background: linear-gradient(45deg,rgba(172, 162, 162, 0.118),rgb(233, 229, 229));
+  }
+}
+@media (min-width:250px) and (max-width:600px){
+  .App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./asset/background.jpg);
+  }
+  .forms{
+    height: 80vh;
+    width: 70%;
+    background-color: white ;
+    border-radius: 12px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px rgb(213, 205, 205) solid;
+  }
+  .inner-pad{
+    height: 95%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .innercont{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .innercontpad{
+    position: relative;
+    height: 60%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .downcont{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .pseudo{
+    position: relative;
+    height: 100%;
+    width: 90%;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pseudo1{
+    position: relative;
+    height: 25%;
+    width: 98%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .cont1{
+    position: relative;
+    height: 40% ;
+    animation: overlay 1s infinite;
+    width: 70%;
+    border-radius: 7px;
+  }
+  .but{
+    position: relative;
+    height: 40% ;
+    animation: overlay 1s infinite;
+    width: 20%;
+    border-radius: 7px;
+  }
+  h1{
+    font-size: 45px;
+    color: rgb(43, 206, 206);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+  }
+  p{
+    font-size: 10px;
+    text-align: center;
+  }
+  .inputfield{
+    height: 40px;
+    width: 280px;
+    border-radius: 6px;
+    border: 1px rgb(123, 243, 248) solid;
+    box-shadow: 1px 1px 10px rgb(123, 243, 248);
+    outline:1px rgb(137, 238, 241) solid ;
+    padding: 10px;
+    color: rgb(132, 121, 121);
+    font-size: 1rem;
+    font-style:italic;
+  }
+  .butt{
+    height: 30px;
+    width: 100px;
+    border-radius: 6px;
+    border: 1px rgb(123, 243, 248) solid;
+    box-shadow: 1px 1px 10px rgb(123, 243, 248);
+    outline:1px rgb(137, 238, 241) solid ;
+    font-size: 1rem;
+    font-style:italic;
+  }
+  @keyframes overlay{
+    from{
+      background: linear-gradient(45deg,rgb(233, 229, 229),rgba(172, 162, 162, 0.118));
+    }
+    to{
+      background: linear-gradient(45deg,rgba(172, 162, 162, 0.118),rgb(233, 229, 229));
+    }
+  }
+}
