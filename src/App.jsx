@@ -77,13 +77,13 @@ function App() {
         <div className='downcont'>
         {Down ? <div className='pseudo'>
           <div className='pseudo1'>
-            <div className='contin'><p className='para'>/// Low Quality upto 240p</p></div><div className='butin'><a href={Low}>Get</a></div>
+            <div className='contin'><p className='para'> Low Quality upto 240p</p></div><div className='butin'><a href={Low}>Get</a></div>
           </div>
           <div className='pseudo1'>
-          <div className='contin'><p className='para'>/// Medium Quality upto 480p</p></div><div className='butin'><a href={Medium}>Get</a></div>
+          <div className='contin'><p className='para'> Medium Quality upto 480p</p></div><div className='butin'><a href={Medium}>Get</a></div>
           </div>
           <div className='pseudo1'>
-          <div className='contin'><p className='para'>/// High Quality upto 720p</p></div><div className='butin'><a href={High}>Get</a></div>
+          <div className='contin'><p className='para'> High Quality upto 720p</p></div><div className='butin'><a href={High}>Get</a></div>
           </div>
           <div className='pseudo1'>
           <div className='contin'></div><div className='butin'></div>
