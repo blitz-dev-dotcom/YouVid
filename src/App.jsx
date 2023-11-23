@@ -36,12 +36,12 @@ function App() {
     const low  =  await result.formats[0].url;
     const medium = await result.formats[1].url;
     const high = await result?.formats[2]?.url;
-    const audio = await result.adaptiveFormats[22].url;
+    //const audio = await result.adaptiveFormats[22].url;
     setLow(low);
     setMedium(medium);
     setHigh(high);
     setDown(true);
-    setAudio(audio);
+    //setAudio(audio);
     console.log(result);
     
   } catch (error) {
@@ -87,9 +87,7 @@ function App() {
           <div className='pseudo1'>
           <div className='contin'><p className='para'> High Quality upto 720p</p></div><div className='butin'><a href={High}>Get</a></div>
           </div>
-          <div className='pseudo1'>
-          <div className='contin'><p className='para'> Audio Only</p></div><div className='butin'><a href={Audio}>Get</a></div>
-          </div>
+          
         </div>:<div className='pseudo'>
           <div className='pseudo1'>
             <div className='cont1'></div><div className='but'></div>
