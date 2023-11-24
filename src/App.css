@@ -18,7 +18,7 @@
   backdrop-filter: blur(50px);
   border-radius: 12px;
   
-  opacity: 0.6;
+  opacity: 0.8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,7 +186,7 @@ p{
     width: 90%;
     background-color: white ;
     border-radius: 12px;
-    opacity: 0.6;
+    opacity: 0.8;
     display: flex;
     justify-content: center;
     align-items: center;
