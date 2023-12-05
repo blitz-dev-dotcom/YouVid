@@ -85,7 +85,7 @@ function App() {
           </div>
         </div>
         <div className='downcont'>
-          {press ? Down ? <div className='pseudo'>
+          {press ? Network? Down ? <div className='pseudo'>
           <div className='pseudo1'>
             <div className='contin'><p className='para'> Low Quality upto 240p</p></div><div className='butin'><a href={Low}>Get</a></div>
           </div>
@@ -109,7 +109,7 @@ function App() {
           <div className='pseudo1'>
           <div className='cont1'></div><div className='but'></div>
           </div>
-        </div> : ""}
+        </div> : "": ""}
         </div>
         </div>
       </form>
