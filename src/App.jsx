@@ -10,6 +10,7 @@ function App() {
    const [Network , setNetwork] = useState(true);
    const inputref = useRef(null);
    const [Url,setUrl] = useState('')
+   const [press , setpress] = useState(false)
    function youtube_parser(url){
     var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
     var match = url.match(regExp);
@@ -58,6 +59,7 @@ function App() {
     youtube_parser(inputref.current.value);
     //fetchdata(inputref.current.value);
     inputref.current.value = "";
+    setpress(true);
    
  }
   
@@ -83,7 +85,7 @@ function App() {
           </div>
         </div>
         <div className='downcont'>
-        {Down ? <div className='pseudo'>
+          {press ? Down ? <div className='pseudo'>
           <div className='pseudo1'>
             <div className='contin'><p className='para'> Low Quality upto 240p</p></div><div className='butin'><a href={Low}>Get</a></div>
           </div>
@@ -107,7 +109,7 @@ function App() {
           <div className='pseudo1'>
           <div className='cont1'></div><div className='but'></div>
           </div>
-        </div>}
+        </div> : ""}
         </div>
         </div>
       </form>
