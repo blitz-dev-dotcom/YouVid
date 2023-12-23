@@ -1,2 +1,2 @@
-# public/ads.txt
+
 google.com, pub-5807363737116577, DIRECT, f08c47fec0942fa0
