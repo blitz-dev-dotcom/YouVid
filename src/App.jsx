@@ -21,34 +21,32 @@ function App() {
       fetchdata(resp);
     }
     else{
-      
+      setNetwork(false);
     }
    }
    const fetchdata = async(a)=>{
     
-    const url = `https://youtube-video-and-shorts-downloader.p.rapidapi.com/?url=${a}`;
-	const options = {
-		method: 'GET',
-		headers: {
-			'X-RapidAPI-Key': '6f7b482cd9msh7256223d5c0819ep14ffc3jsnc16bc9ee9667',
-			'X-RapidAPI-Host': 'youtube-video-and-shorts-downloader.p.rapidapi.com'
-	}
-};
-
-try {
-	const response = await fetch(url, options);
-	const result = await response.json();
-    const audio  =  await result?.audio?.url;
-    const medium = await result?.video[0]?.url;
-    const high = await result?.video[1]?.url;
+    const url = `https://ytstream-download-youtube-videos.p.rapidapi.com/dl?id=${a}`;
+    const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': '6f7b482cd9msh7256223d5c0819ep14ffc3jsnc16bc9ee9667',
+      'X-RapidAPI-Host': 'ytstream-download-youtube-videos.p.rapidapi.com'
+    }
+  };
+  
+  try {
+    const response = await fetch(url, options);
+    const result =  await response.json();
+    const low  =  await result.formats[0].url;
+    const medium = await result.formats[1].url;
+    const high = await result?.formats[2]?.url;
     //const audio = await result.adaptiveFormats[22].url;
-    setLow(audio);
+    setLow(low);
     setMedium(medium);
     setHigh(high);
-    
     setDown(true);
     //setAudio(audio);
-    
     console.log(result);
     
   } catch (error) {
@@ -58,7 +56,7 @@ try {
    
   const HandleClick = (e)=>{
     e.preventDefault();
-    fetchdata(inputref.current.value);
+    youtube_parser(inputref.current.value);
     //fetchdata(inputref.current.value);
     inputref.current.value = "";
     setpress(true);
@@ -73,7 +71,7 @@ try {
           <div className='innercontpad'>
           <div className='spantag'>{Network ? "" : <span>Youtube Link invalid!!</span>}</div>
           <h1>YouVid</h1>
-          
+          <p>You can't Download Shorts! But You <br/> can Download long videos</p>
           <div className='inputfield'>
           <input 
             className='inputfield1'
