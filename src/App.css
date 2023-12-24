@@ -148,8 +148,9 @@ p{
   width: 100%;
   border-radius: 6px;
   border-radius: 6px;
-  border: 1px rgb(66, 66, 255) solid;
-  box-shadow: none;
+  
+  outline-color: red;
+ 
   padding: 10px;
   color: rgb(132, 121, 121);
   font-size: 1rem;

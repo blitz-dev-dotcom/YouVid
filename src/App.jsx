@@ -24,6 +24,7 @@ function App() {
       setNetwork(false);
     }
    }
+   useEffect(()=>{inputref.current.focus()},[])
    const fetchdata = async(a)=>{
     
     const url = `https://ytstream-download-youtube-videos.p.rapidapi.com/dl?id=${a}`;
